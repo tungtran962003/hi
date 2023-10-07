@@ -1,0 +1,81 @@
+.note{
+    color: red;
+}
+
+.title-register{
+    color: #1abc9c;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.center-form{
+    display: flex;
+}
+
+.design-from{
+    border: 1px solid black;
+    width: 100%;
+    background-color: #55efc4;
+    padding: 25px;
+}
+
+.center-table{
+    text-align: center;
+}
+
+.content-form{
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.border-checkbox{
+    border: 1px solid black;
+    background-color: white;
+    width: 94%;
+    padding-left: 40px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.border-radio{
+    border: 1px solid black;
+    background-color: white;
+    width: 94%;
+    padding-left: 40px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.btn-border{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-submit{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: #48dbfb;
+    border: 1px solid black;
+    font-size: 15px;
+}
+
+.btn-submit:hover{
+    background-color: #ff6b6b;
+    color: white;
+}
+
+footer{
+    color: #576574;
+    background-color: #48dbfb;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}

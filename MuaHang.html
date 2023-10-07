@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="document.css">
+    <link rel="stylesheet" href="MuaHang.css">
+<body>
+    <div class="web">
+        <div class="w-15"></div>
+        <div class="w-70">
+            <div>
+                <div><img src="images/banner.PNG" alt="" width="100%"></div>
+            </div>
+            <div class="design-nav">
+                <div class="border-text-nav"><a class="text-nav" href="BoSuuTap.html"><i class="fa-solid fa-image"></i> Bộ sưu tập</a></div>
+                <div class="border-text-nav"><a class="text-nav" href="DangKi.html"><i class="fa-solid fa-address-card"></i> Đăng ký</a></div>
+                <div class="border-text-nav"><a class="text-nav" href="MuaHang.html"><i class="fa-solid fa-cart-shopping"></i>  Bán hàng</a></div>
+            </div>
+            <br>
+            <div class="title-shop">Giỏ hàng của bạn</div>
+            <div class="select-price">
+                <select id="mucgia" class="chonmg" onclick="mucGia()" style="height: 30px; font-size: 15px; color: #1abc9c;">
+                    <option value="chongia">Chọn mức giá</option>
+                    <option value="duoi10tr">Dưới 10 triệu</option>
+                    <option value="tren10tr">Trên 10 triệu</option>
+                </select>
+            </div>
+            <div class="tbl-shop">
+                <table border="1">
+                    <tr class="hang1">
+                        <td class="checkbox0"></td>
+                        <td class="hanghoa0">Hàng hoá</td>
+                        <td class="hinhanh0">Hình ảnh</td>
+                        <td class="dongia0">Đơn giá</td>
+                        <td class="soluong0">Số lượng</td>
+                        <td class="thanhtien0">Thành tiền</td>
+                    </tr>
+                    <tr>
+                        <td class="checkbox"><input type="checkbox" name="checkbox" onclick="tick()"></td>
+                        <td class="hanghoa">iPhone 11</td>
+                        <td><img src="images/hanghoa0.jpg" width="80px" name="anh"></td>
+                        <td class="dongia" name="gia">4000000</td>
+                        <td><input type="number" value="0" class="soluong" onkeyup="tick()" onchange="tick()" disabled>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="checkbox"><input type="checkbox" name="checkbox" onclick="tick()"></td>
+                        <td class="hanghoa">iPhone 12</td>
+                        <td><img src="images/hanghoa1.jpg" name="anh" width="80px"></td>
+                        <td class="dongia" name="gia">8000000</td>
+                        <td><input type="number" value="0" class="soluong" onkeyup="tick()" onchange="tick()" disabled>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="checkbox"><input type="checkbox" name="checkbox" onclick="tick()"></td>
+                        <td class="hanghoa">Macbook Pro M1</td>
+                        <td><img src="images/hanghoa2.jpg" name="anh" width="80px"></td>
+                        <td class="dongia" name="gia">3000000</td>
+                        <td><input type="number" value="0" class="soluong" onkeyup="tick()" onchange="tick()" disabled>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="checkbox"><input type="checkbox" name="checkbox" onclick="tick()"></td>
+                        <td class="hanghoa">Oppo find x3 pro</td>
+                        <td><img src="images/hanghoa3.jpg" name="anh" width="80px"></td>
+                        <td class="dongia" name="gia">5000000</td>
+                        <td><input type="number" value="0" class="soluong" onkeyup="tick()" onchange="tick()" disabled>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="checkbox"><input type="checkbox" name="checkbox" onclick="tick()"></td>
+                        <td class="hanghoa">Msi gf63</td>
+                        <td><img src="images/hanghoa4.jpg" name="anh" width="80px"></td>
+                        <td class="dongia" name="gia">16000000</td>
+                        <td><input type="number" value="0" class="soluong" onkeyup="tick()" onchange="tick()" disabled>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="checkbox"><input type="checkbox" name="checkbox" onclick="tick()"></td>
+                        <td class="hanghoa">SamSung Galaxy Z Flip</td>
+                        <td><img src="images/hanghoa5.jpg" name="anh" width="80px"></td>
+                        <td class="dongia" name="gia">11000000</td>
+                        <td><input type="number" value="0" class="soluong" onkeyup="tick()" onchange="tick()" disabled>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="checkbox"><input type="checkbox" name="checkbox" onclick="tick()"></td>
+                        <td class="hanghoa">Samsung Fold 2</td>
+                        <td><img src="images/hanghoa6.jpg" name="anh" width="80px"></td>
+                        <td class="dongia" name="gia">12000000</td>
+                        <td><input type="number" value="0" class="soluong" onkeyup="tick()" onchange="tick()" disabled>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr class="sum">
+                        <td colspan="5" class="tongtien">Tổng</td>
+                        <td class="tongtien" id="sum"></td>
+                    </tr>
+                </table>
+            </div>
+            <footer>
+                Trần Thanh Tùng PH27337
+            </footer>
+        </div>
+        <div class="w-15"></div>
+    </div>
+    <script src="https://kit.fontawesome.com/6f3176ebc0.js" crossorigin="anonymous"></script>
+    <script src="MuaHang.js"></script>
+</body>
+
+</html>

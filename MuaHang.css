@@ -1,0 +1,40 @@
+.select-price{
+    color: #1abc9c;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    height: 30px;
+}
+
+.title-shop{
+    color: #1abc9c;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+table, td ,th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 20px;
+}
+
+.tbl-shop{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    color: #576574;
+    background-color: #48dbfb;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}

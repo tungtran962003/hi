@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ĐĂNG KÍ</title>
+    <link rel="stylesheet" href="DangKi.css">
+    <link rel="stylesheet" href="document.css">
+</head>
+
+<body>
+    <div class="web">
+        <div class="w-15"></div>
+        <div class="w-70">
+            <div>
+                <div><img src="images/banner.PNG" alt="" width="100%"></div>
+            </div>
+            <div class="design-nav">
+                <div class="border-text-nav"><a class="text-nav" href="BoSuuTap.html"><i class="fa-solid fa-image"></i>
+                        Bộ sưu tập</a></div>
+                <div class="border-text-nav"><a class="text-nav" href="DangKi.html"><i
+                            class="fa-solid fa-address-card"></i> Đăng ký</a></div>
+                <div class="border-text-nav"><a class="text-nav" href="MuaHang.html"><i
+                            class="fa-solid fa-cart-shopping"></i> Bán hàng</a></div>
+            </div>
+            <div>
+                <br>
+                <div class="title-register">Đăng ký</div>
+                <br>
+                <div class="center-form">
+                    <div class="w-15"></div>
+                    <div class="w-70">
+                        <div class="design-from">
+                           
+                            <div class="content-form">
+                                Họ tên &nbsp &nbsp &nbsp &nbsp &nbsp <span class="note" id="note-name"></span>
+                            </div>
+                            <input id="name" required type="text" style="width: 98.5%; height: 25px; font-size: 20px;"
+                                oninput="onInputText('note-name')">
+                            <div class="content-form">
+                                Email &nbsp &nbsp &nbsp &nbsp &nbsp <span class="note" id="note-email"></span>
+                            </div>
+                            <input id="email" required type="text" style="width: 98.5%; height: 25px; font-size: 20px;"
+                                oninput="onInputText('note-email')">
+
+                            <div class="content-form">
+                                Giới tính
+                            </div>
+                            <div class="border-radio">
+                                <input id="male" name="radio" checked type="radio" value="male">Nam &nbsp &nbsp &nbsp
+                                &nbsp &nbsp
+                                <input id="female" name="radio" type="radio" value="female">Nữ
+                            </div>
+
+                            <div class="content-form">
+                                Tên đăng nhập &nbsp &nbsp &nbsp &nbsp &nbsp <span class="note" id="note-user"></span>
+                            </div>
+                            <input id="user" required type="text" style="width: 98.5%; height: 25px; font-size: 20px;"
+                                oninput="onInputText('note-user')">
+                            <div class="content-form">
+                                Mật khẩu &nbsp &nbsp &nbsp &nbsp &nbsp <span class="note" id="note-pass"></span>
+                            </div>
+                            <input id="pass" required type="password"
+                                style="width: 98.5%; height: 25px; font-size: 20px;" oninput="onInputText('note-pass')">
+                            <div class="content-form">
+                                Kiểm tra mật khẩu &nbsp &nbsp &nbsp &nbsp &nbsp <span class="note"
+                                    id="note-checkpass"></span>
+                            </div>
+                            <input id="checkpass" type="password" style="width: 98.5%; height: 25px; font-size: 20px;"
+                                oninput="onInputText('note-checkpass')">
+                            <div class="content-form">
+                                Sở thích &nbsp &nbsp &nbsp &nbsp &nbsp <span class="note" id="note-checkbox"></span>
+                            </div>
+                            <div class="border-checkbox">
+                                <form id="form" name="myForm" onchange="onInputText('note-checkbox')">
+                                    <input name="checkbox" id="box1" type="checkbox">Games &nbsp &nbsp &nbsp &nbsp &nbsp
+                                    <input name="checkbox" id="box2" type="checkbox">Bóng đá &nbsp &nbsp &nbsp &nbsp
+                                    &nbsp
+                                    <input name="checkbox" id="box3" type="checkbox">Bơi lội &nbsp &nbsp &nbsp &nbsp
+                                    &nbsp
+                                    <input name="checkbox" id="box4" type="checkbox">Nghe nhạc &nbsp &nbsp &nbsp &nbsp
+                                    &nbsp
+                                    <input name="checkbox" id="box5" type="checkbox">Khác
+                                </form>
+                            </div>
+
+                            <div class="content-form">
+                                Quốc tích
+                            </div>
+                            <div>
+                                <select name="" id="course" style="width: 99.9%; height: 35px">
+                                    <option value="VN" selected>Việt Nam</option>
+                                    <option value="TL">Thái Lan</option>
+                                    <option value="JP">Nhật Bản</option>
+                                    <option value="KH">Hàn Quốc</option>
+                                </select>
+                            </div>
+                            <div class="btn-border">
+                                <button class="btn-submit" onclick="checkForm()" type="submit">Đăng ký</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-15"></div>
+                </div>
+            </div>
+            <footer>
+                Trần Thanh Tùng PH27337
+            </footer>
+        </div>
+        <div class="w-15"></div>
+    </div>
+
+    <script src="DangKi.js"></script>
+    <script src="https://kit.fontawesome.com/6f3176ebc0.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

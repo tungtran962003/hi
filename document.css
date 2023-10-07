@@ -1,0 +1,57 @@
+.w-100{
+    width: 100%;
+}
+
+.w-15{
+    width: 15%;
+}
+
+.w-70{
+    width: 70%;
+}
+
+.web{
+    display: flex;
+    height: 1400px;
+}
+
+body{
+    margin: 0px;
+}
+
+.design-nav{
+    display: flex;
+    background-color: #48dbfb;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-nav{
+    text-decoration: none;
+    color: #2d3436;
+    font-size: 20xp;
+}
+
+.text-nav:hover {
+    color: #e84118;
+}
+
+.border-text-nav{
+    margin: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.border-text-nav:hover{
+    background-color: #26de81;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
